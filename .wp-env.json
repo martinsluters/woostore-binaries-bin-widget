@@ -5,6 +5,9 @@
           "port": 8088
       }
   },
-  "plugins": ["."],
+  "plugins": [
+    ".",
+    "https://downloads.wordpress.org/plugin/woocommerce.zip"
+  ],
   "phpVersion": "8.0"
 }
