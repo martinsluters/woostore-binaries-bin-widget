@@ -10,6 +10,16 @@
       "dealerdirect/phpcodesniffer-composer-installer": true
     }
   },
+  "autoload": {
+      "psr-4": {
+          "martinsluters\\WooStoreBinaryBinWidget\\": "src/"
+      }
+  },
+  "autoload-dev": {
+    "psr-4": {
+       "martinsluters\\WooStoreBinaryBinWidget\\Tests\\": "tests/"
+    }
+  },
   "require-dev": {
     "wp-phpunit/wp-phpunit": "^6.2",
     "yoast/phpunit-polyfills": "^1.0",
