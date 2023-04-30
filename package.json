@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "description": "Binary Bin Widget for WooCommerce powered stores",
   "private": true,
+  "scripts": {
+    "wp-env:stop": "wp-env stop",
+    "wp-env:start": "wp-env start",
+    "wp-env": "wp-env",
+    "wp-env:logs": "wp-env logs",
+    "wp-env:cli": "wp-env run cli"
+  },
   "author": "Martins Luters (luters.martins@gmail.com)",
   "license": "MIT",
-  "homepage": "https://github.com/martinsluters/woostore-binary-bin-widget#readme"
+  "homepage": "https://github.com/martinsluters/woostore-binary-bin-widget#readme",
+  "devDependencies": {
+    "@wordpress/env": "^5.10.0"
+  }
 }
