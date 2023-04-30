@@ -1,0 +1,11 @@
+.DS_Store
+todo.todo
+*.cache
+*.zip
+.vscode/
+
+# PHP Composer
+/vendor
+
+# npm and js
+node_modules/
