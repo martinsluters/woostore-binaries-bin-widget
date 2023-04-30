@@ -8,7 +8,8 @@
     "wp-env:start": "wp-env start && wp-env run cli 'wp theme activate storefront'",
     "wp-env": "wp-env",
     "wp-env:logs": "wp-env logs",
-    "wp-env:cli": "wp-env run cli"
+    "wp-env:cli": "wp-env run cli",
+    "test:wpunit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/woostore-binary-bin-widget/phpunit.xml.dist --verbose'"
   },
   "author": "Martins Luters (luters.martins@gmail.com)",
   "license": "MIT",
