@@ -1,0 +1,9 @@
+{
+  "name": "woostore-binary-bin-widget",
+  "version": "1.0.0",
+  "description": "Binary Bin Widget for WooCommerce powered stores",
+  "private": true,
+  "author": "Martins Luters (luters.martins@gmail.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/martinsluters/woostore-binary-bin-widget#readme"
+}
