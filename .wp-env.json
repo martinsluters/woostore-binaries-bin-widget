@@ -1,0 +1,10 @@
+{
+  "port": 8087,
+  "env": {
+      "tests": {
+          "port": 8088
+      }
+  },
+  "plugins": ["."],
+  "phpVersion": "8.0"
+}
