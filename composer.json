@@ -1,5 +1,10 @@
 {
   "name": "martinsluters/woostore-binary-bin-widget",
   "type": "wordpress-plugin",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "platform": {
+      "php": "8.0"
+    }
+  }
 }
