@@ -9,7 +9,8 @@
     "wp-env": "wp-env",
     "wp-env:logs": "wp-env logs",
     "wp-env:cli": "wp-env run cli",
-    "test:wpunit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/woostore-binary-bin-widget/phpunit.xml.dist --verbose'"
+    "test:wpunit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/woostore-binary-bin-widget/phpunit.xml.dist --verbose'",
+    "test:phpcs": "./vendor/bin/phpcs --standard=phpcs.xml.dist --extensions=php --ignore=vendor ."
   },
   "author": "Martins Luters (luters.martins@gmail.com)",
   "license": "MIT",
