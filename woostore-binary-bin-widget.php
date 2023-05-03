@@ -25,3 +25,5 @@ defined( 'ABSPATH' ) || die();
 if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 	require dirname( __FILE__ ) . '/vendor/autoload.php';
 }
+
+( Bootstrap::get_instance( __FILE__ ) )->init();
