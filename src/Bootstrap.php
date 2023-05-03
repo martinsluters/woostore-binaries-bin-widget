@@ -127,6 +127,7 @@ final class Bootstrap {
 				Configuration\WordPressConfiguration::class,
 				Configuration\HTTPBinAPIClientConfiguration::class,
 				Configuration\WooCommerceConfiguration::class,
+				Configuration\EventManagementConfiguration::class,
 			)
 		);
 
