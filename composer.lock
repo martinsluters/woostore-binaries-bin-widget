@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56ddfc1ca28cc66b89a989b9a4985c2c",
-    "packages": [],
+    "content-hash": "982e5d308c3c34e71d6b102ef81c003f",
+    "packages": [
+        {
+            "name": "10up/async-transients",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/10up/Async-Transients.git",
+                "reference": "0dfb0e5fd98333d5e7d29c45ef1d01e66c129e4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/10up/Async-Transients/zipball/0dfb0e5fd98333d5e7d29c45ef1d01e66c129e4a",
+                "reference": "0dfb0e5fd98333d5e7d29c45ef1d01e66c129e4a",
+                "shasum": ""
+            },
+            "type": "wordpress-library",
+            "autoload": {
+                "files": [
+                    "includes/helpers.php"
+                ],
+                "psr-4": {
+                    "TenUp\\AsyncTransients\\": "includes/TenUp/AsyncTransients"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "10up",
+                    "homepage": "http://10up.com"
+                }
+            ],
+            "description": "Transients, that regenerate asynchronously once content is expired, and serve stale content in the mean time",
+            "support": {
+                "issues": "https://github.com/10up/Async-Transients/issues",
+                "source": "https://github.com/10up/Async-Transients/tree/develop"
+            },
+            "time": "2018-01-09T15:53:01+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "dealerdirect/phpcodesniffer-composer-installer",

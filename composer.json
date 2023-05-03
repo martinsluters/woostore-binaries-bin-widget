@@ -27,5 +27,8 @@
     "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
     "wp-coding-standards/wpcs": "^2.3",
     "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "require": {
+    "10up/async-transients": "^1.0"
   }
 }
