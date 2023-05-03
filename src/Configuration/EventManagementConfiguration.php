@@ -35,7 +35,9 @@ class EventManagementConfiguration implements ContainerConfigurationInterface {
 		// Add all subscribers to events.
 		$container['subscribers'] = $container->service(
 			function ( DependencyContainer $container ) {
-				$subscribers = array();
+				$subscribers = array(
+					new Subscribers\BinariesBinMyAccountTabSubscriber( $container['my-account:binaries-bin-tab'], $container['woocommerce.current_customer'] ),
+				);
 
 				return $subscribers;
 			}
