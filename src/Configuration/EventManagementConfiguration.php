@@ -38,6 +38,7 @@ class EventManagementConfiguration implements ContainerConfigurationInterface {
 				$subscribers = array(
 					new Subscribers\BinariesBinMyAccountTabSubscriber( $container['my-account:binaries-bin-tab'], $container['woocommerce.current_customer'] ),
 					new Subscribers\WidgetSubscriber( $container['widgets.binary_bin'] ),
+					new Subscribers\PluginActivationSubscriber( $container['plugin_activation_flag_slug'] ),
 				);
 
 				return $subscribers;
