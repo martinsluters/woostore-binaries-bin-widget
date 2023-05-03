@@ -24,5 +24,6 @@ class WordPressConfiguration implements ContainerConfigurationInterface {
 	 */
 	public function modify( DependencyContainer $container ) {
 		$container['wordpress.http_transport'] = _wp_http_get_object();
+		$container['wordpress.current_user']   = wp_get_current_user();
 	}
 }
