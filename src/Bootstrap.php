@@ -110,7 +110,12 @@ final class Bootstrap {
 	 * @return void
 	 */
 	public function bootstrap_core() {
+		// Only load once.
+		if ( $this->loaded ) {
+			return;
+		}
 
+		$this->loaded = true;
 	}
 
 	/**
