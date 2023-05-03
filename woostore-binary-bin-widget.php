@@ -7,7 +7,7 @@
  * Author URI: https://github.com/martinsluters
  * Version: 1.0.0
  * License: MIT
- * Text Domain: woostore-binary-bin-widget
+ * Text Domain: woo-store-binary-bin-widget
  *
  * @package     WooStoreBinaryBinWidget
  * @author      Martins Luters (luters.martins@gmail.com)
