@@ -126,6 +126,7 @@ final class Bootstrap {
 				Configuration\BackgroundTransientCacheConfiguration::class,
 				Configuration\WordPressConfiguration::class,
 				Configuration\HTTPBinAPIClientConfiguration::class,
+				Configuration\WooCommerceConfiguration::class,
 			)
 		);
 
