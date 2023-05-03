@@ -15,3 +15,13 @@
  *
  * @wordpress-plugin
  */
+
+declare( strict_types=1 );
+
+namespace martinsluters\WooStoreBinaryBinWidget;
+
+defined( 'ABSPATH' ) || die();
+
+if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
+	require dirname( __FILE__ ) . '/vendor/autoload.php';
+}
