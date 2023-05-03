@@ -129,6 +129,7 @@ final class Bootstrap {
 				Configuration\WooCommerceConfiguration::class,
 				Configuration\BinariesBinRepositoryConfiguration::class,
 				Configuration\MyAccountTabConfiguration::class,
+				Configuration\WidgetConfiguration::class,
 				Configuration\EventManagementConfiguration::class,
 			)
 		);
