@@ -124,6 +124,7 @@ final class Bootstrap {
 		$this->container->configure(
 			array(
 				Configuration\WordPressConfiguration::class,
+				Configuration\HTTPBinAPIClientConfiguration::class,
 			)
 		);
 
