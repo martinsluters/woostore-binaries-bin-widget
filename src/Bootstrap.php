@@ -57,9 +57,14 @@ final class Bootstrap {
 	 * @param string $main_plugin_file The main plugin file.
 	 */
 	private function __construct( $main_plugin_file ) {
-		// Load the plugin's dependency injection container.
+		// Load the plugin's dependency injection container with some initial dependencies.
 		$this->container = new DependencyContainer(
-			array()
+			array(
+				'main_plugin_file' => $main_plugin_file,
+				'plugin_path'      => plugin_dir_path( $main_plugin_file ),
+				'plugin_version'   => self::VERSION,
+				'plugin_slug'      => self::SLUG,
+			)
 		);
 		$this->loaded    = false;
 	}
