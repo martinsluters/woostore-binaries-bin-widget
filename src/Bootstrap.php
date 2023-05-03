@@ -107,6 +107,12 @@ final class Bootstrap {
 	 * @return void
 	 */
 	public function init(): void {
+
+		// Check plugin's dependencies/requirements.
+		if ( ! $this->check_plugin_requirements() ) {
+			return;
+		}
+
 		add_action( 'after_setup_theme', array( $this, 'bootstrap_core' ) );
 
 		register_activation_hook( $this->container['main_plugin_file'], array( $this, 'activate' ) );
@@ -154,6 +160,20 @@ final class Bootstrap {
 	 */
 	public function activate() {
 		update_option( $this->container['plugin_activation_flag_slug'], $this->container['plugin_slug'], false );
+	}
+
+	/**
+	 * Check plugin's dependencies.
+	 *
+	 * @return bool
+	 */
+	public function check_plugin_requirements() {
+
+		// Check if WooCommerce is active.
+		if ( ! defined( 'WC_VERSION' ) ) {
+			return false;
+		}
+		return true;
 	}
 
 	/**
