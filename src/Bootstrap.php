@@ -120,6 +120,13 @@ final class Bootstrap {
 			return;
 		}
 
+		// Configure the plugin's dependency injection container with the rest of the dependencies.
+		$this->container->configure(
+			array(
+				Configuration\WordPressConfiguration::class,
+			)
+		);
+
 		$this->loaded = true;
 	}
 
