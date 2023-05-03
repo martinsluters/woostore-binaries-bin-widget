@@ -97,7 +97,7 @@ class BinariesBinRepository {
 		if ( ! is_array( $binaries_bin_settings ) || empty( $binaries_bin_settings ) ) {
 			return new \WP_Error(
 				'binaries_bin_settings_not_found',
-				__( 'Binaries Bin settings not found.', 'woo-store-binary-bin-widget' )
+				__( 'Binaries Bin settings not found.', 'woo-store-binaries-bin-widget' )
 			);
 		}
 

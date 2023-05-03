@@ -23,7 +23,7 @@ if ( ! empty( $binaries_bin ) && ! is_wp_error( $binaries_bin ) ) :
 	<?php
 else :
 	?>
-	<p><?php echo esc_html__( 'Your Binary Bin is empty.', 'woo-store-binary-bin-widget' ); ?></p>
+	<p><?php echo esc_html__( 'Your Binary Bin is empty.', 'woo-store-binaries-bin-widget' ); ?></p>
 	<?php
 endif;
 

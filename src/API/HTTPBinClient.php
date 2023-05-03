@@ -68,7 +68,7 @@ class HTTPBinClient {
 		if ( false === $response_status_code ) {
 			return new WP_Error(
 				'binary_bin_api_error',
-				__( 'Error while retrieving data from HTTPBin API.', 'woo-store-binary-bin-widget' )
+				__( 'Error while retrieving data from HTTPBin API.', 'woo-store-binaries-bin-widget' )
 			);
 		}
 

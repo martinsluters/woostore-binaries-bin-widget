@@ -21,7 +21,7 @@ final class Bootstrap {
 	 *
 	 * @var string
 	 */
-	const SLUG = 'woo-store-binary-bin-widget';
+	const SLUG = 'woo-store-binaries-bin-widget';
 
 	/**
 	 * Plugin version.

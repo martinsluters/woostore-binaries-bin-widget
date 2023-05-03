@@ -55,7 +55,7 @@ class BinariesBinTab extends AbstractTab {
 	 * {@inheritdoc}
 	 */
 	public function myaccount_tab_title(): string {
-		return esc_html__( 'Binaries Bin', 'woo-store-binary-bin-widget' );
+		return esc_html__( 'Binaries Bin', 'woo-store-binaries-bin-widget' );
 	}
 
 	/**
@@ -86,7 +86,7 @@ class BinariesBinTab extends AbstractTab {
 
 		if ( is_wp_error( $binaries_bin ) ) {
 			// translators: %s: HTTP transport service error message.
-			echo esc_html( wp_sprintf( __( 'Error fetching binaries bin from http://httpbin.org/: %s', 'woo-store-binary-bin-widget' ), $binaries_bin->get_error_message() ) );
+			echo esc_html( wp_sprintf( __( 'Error fetching binaries bin from http://httpbin.org/: %s', 'woo-store-binaries-bin-widget' ), $binaries_bin->get_error_message() ) );
 			return;
 		}
 
@@ -151,7 +151,7 @@ class BinariesBinTab extends AbstractTab {
 
 		// Display notice if non-alphanumeric characters were removed.
 		if ( true === $did_have_non_alphanumeric ) {
-			wc_add_notice( __( 'The Binaries Bin settings contained non-alphanumeric characters. These have been removed.', 'woo-store-binary-bin-widget' ), 'error' );
+			wc_add_notice( __( 'The Binaries Bin settings contained non-alphanumeric characters. These have been removed.', 'woo-store-binaries-bin-widget' ), 'error' );
 		}
 
 		// Save value in customers meta data.
@@ -161,7 +161,7 @@ class BinariesBinTab extends AbstractTab {
 		// Also resets the cache.
 		$this->binaries_bin_repository->get_binaries( true );
 
-		wc_add_notice( __( 'Binary bin settings changed successfully.', 'woo-store-binary-bin-widget' ) );
+		wc_add_notice( __( 'Binary bin settings changed successfully.', 'woo-store-binaries-bin-widget' ) );
 
 		wp_safe_redirect( wc_get_endpoint_url( $this->myaccount_tab_slug(), '', wc_get_page_permalink( 'myaccount' ) ) );
 		exit;

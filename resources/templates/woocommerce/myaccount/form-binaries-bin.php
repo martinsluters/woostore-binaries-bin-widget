@@ -14,8 +14,8 @@ do_action( 'woostore_binaries_bin_form' ); ?>
 	<?php do_action( 'woostore_binaries_bin_form_start' ); ?>
 
 	<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
-		<label for="binaries_bin_settings"><?php esc_html_e( 'Binaries Bin Settings', 'woo-store-binary-bin-widget' ); ?>&nbsp;<span class="required">*</span></label>
-		<textarea class="woocommerce-Input woocommerce-Input--textarea input-textarea" name="binaries_bin_settings" id="binaries_bin_settings" rows="2" cols="5" placeholder="<?php esc_attr_e( 'JohnDoe', 'woo-store-binary-bin-widget' ); ?>"><?php echo esc_textarea( $page->get_customer_binary_bin_settings_for_textarea() ); ?></textarea>
+		<label for="binaries_bin_settings"><?php esc_html_e( 'Binaries Bin Settings', 'woo-store-binaries-bin-widget' ); ?>&nbsp;<span class="required">*</span></label>
+		<textarea class="woocommerce-Input woocommerce-Input--textarea input-textarea" name="binaries_bin_settings" id="binaries_bin_settings" rows="2" cols="5" placeholder="<?php esc_attr_e( 'JohnDoe', 'woo-store-binaries-bin-widget' ); ?>"><?php echo esc_textarea( $page->get_customer_binary_bin_settings_for_textarea() ); ?></textarea>
 	</p>
 	<div class="clear"></div>
 

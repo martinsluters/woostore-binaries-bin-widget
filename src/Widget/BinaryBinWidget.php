@@ -51,7 +51,7 @@ class BinaryBinWidget extends WP_Widget {
 		$this->current_customer        = $current_customer;
 		$this->template_path           = $template_path;
 		parent::__construct(
-			'woo-store-binary-bin-widget',
+			'woo-store-binaries-bin-widget',
 			'Woo Store Binary Bin Widget',
 			array(
 				'description' => 'Woo Store Binary Bin Widget',
@@ -67,7 +67,7 @@ class BinaryBinWidget extends WP_Widget {
 	 */
 	public function widget( $args, $instance ) {
 		echo '<div class="widget widget_woo_store_binary_bin_widget">';
-		echo '<h2 class="widget-title">' . esc_html__( 'Binary Bin Contents > Widget', 'woo-store-binary-bin-widget' ) . '</h2>';
+		echo '<h2 class="widget-title">' . esc_html__( 'Binary Bin Contents > Widget', 'woo-store-binaries-bin-widget' ) . '</h2>';
 		echo '<div class="widget-content">';
 		$this->get_content();
 		echo '</div>';
@@ -81,7 +81,7 @@ class BinaryBinWidget extends WP_Widget {
 	 */
 	protected function get_content(): void {
 		if ( 0 >= $this->current_customer->get_id() ) {
-			echo '<p>' . esc_html__( 'Please log in to see your Binary Bin contents.', 'woo-store-binary-bin-widget' ) . '</p>';
+			echo '<p>' . esc_html__( 'Please log in to see your Binary Bin contents.', 'woo-store-binaries-bin-widget' ) . '</p>';
 			return;
 		}
 
