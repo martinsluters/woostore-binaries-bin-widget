@@ -128,9 +128,15 @@ final class Bootstrap {
 				Configuration\HTTPBinAPIClientConfiguration::class,
 				Configuration\WooCommerceConfiguration::class,
 				Configuration\BinariesBinRepositoryConfiguration::class,
+				Configuration\MyAccountTabConfiguration::class,
 				Configuration\EventManagementConfiguration::class,
 			)
 		);
+
+		// Add WP event subscribers to event manager.
+		foreach ( $this->container['subscribers'] as $subscriber ) {
+			$this->container['event_manager']->add_subscriber( $subscriber );
+		}
 
 		$this->loaded = true;
 	}
