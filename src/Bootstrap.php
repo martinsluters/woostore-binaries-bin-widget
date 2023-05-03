@@ -60,10 +60,11 @@ final class Bootstrap {
 		// Load the plugin's dependency injection container with some initial dependencies.
 		$this->container = new DependencyContainer(
 			array(
-				'main_plugin_file' => $main_plugin_file,
-				'plugin_path'      => plugin_dir_path( $main_plugin_file ),
-				'plugin_version'   => self::VERSION,
-				'plugin_slug'      => self::SLUG,
+				'main_plugin_file'            => $main_plugin_file,
+				'plugin_path'                 => plugin_dir_path( $main_plugin_file ),
+				'plugin_version'              => self::VERSION,
+				'plugin_slug'                 => self::SLUG,
+				'plugin_activation_flag_slug' => 'activated_' . self::SLUG,
 			)
 		);
 		$this->loaded    = false;
@@ -107,6 +108,8 @@ final class Bootstrap {
 	 */
 	public function init(): void {
 		add_action( 'after_setup_theme', array( $this, 'bootstrap_core' ) );
+
+		register_activation_hook( $this->container['main_plugin_file'], array( $this, 'activate' ) );
 	}
 
 	/**
@@ -140,6 +143,17 @@ final class Bootstrap {
 		}
 
 		$this->loaded = true;
+	}
+
+	/**
+	 * Plugin's activation callback.
+	 * Let's go with the simple options-based activation solution described below.
+	 *
+	 * @see https://developer.wordpress.org/reference/functions/register_activation_hook/#process-flow
+	 * @return void
+	 */
+	public function activate() {
+		update_option( $this->container['plugin_activation_flag_slug'], $this->container['plugin_slug'], false );
 	}
 
 	/**
