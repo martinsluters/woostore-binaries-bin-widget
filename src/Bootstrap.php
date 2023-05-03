@@ -123,6 +123,7 @@ final class Bootstrap {
 		// Configure the plugin's dependency injection container with the rest of the dependencies.
 		$this->container->configure(
 			array(
+				Configuration\BackgroundTransientCacheConfiguration::class,
 				Configuration\WordPressConfiguration::class,
 				Configuration\HTTPBinAPIClientConfiguration::class,
 			)
