@@ -1,5 +1,5 @@
 {
-  "name": "woostore-binary-bin-widget",
+  "name": "woostore-binaries-bin-widget",
   "version": "1.0.0",
   "description": "Binary Bin Widget for WooCommerce powered stores",
   "private": true,
@@ -9,12 +9,12 @@
     "wp-env": "wp-env",
     "wp-env:logs": "wp-env logs",
     "wp-env:cli": "wp-env run cli",
-    "test:wpunit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/woostore-binary-bin-widget/phpunit.xml.dist --verbose'",
+    "test:wpunit": "wp-env run phpunit 'phpunit -c /var/www/html/wp-content/plugins/woostore-binaries-bin-widget/phpunit.xml.dist --verbose'",
     "test:phpcs": "./vendor/bin/phpcs --standard=phpcs.xml.dist --extensions=php --ignore=vendor ."
   },
   "author": "Martins Luters (luters.martins@gmail.com)",
   "license": "MIT",
-  "homepage": "https://github.com/martinsluters/woostore-binary-bin-widget#readme",
+  "homepage": "https://github.com/martinsluters/woostore-binaries-bin-widget#readme",
   "devDependencies": {
     "@wordpress/env": "^5.10.0"
   }
